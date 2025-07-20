@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Increasing Dice Order",
+    "topic": "Probability",
+    "tags": ["Combinatorics"],
+    "difficulty": "Easy",
+    "question": "You roll a fair six-sided die three times. What is the probability that the numbers you roll are in strictly increasing order?",
+    "answer": "The total number of possible outcomes is 6 * 6 * 6 = 216. To find the number of outcomes in strictly increasing order, we can choose 3 distinct numbers from {1, 2, 3, 4, 5, 6}. The number of ways to do this is C(6, 3) = (6 * 5 * 4) / (3 * 2 * 1) = 20. Once we've chosen 3 numbers, there is only one way to arrange them in increasing order. Therefore, the probability is 20 / 216, which simplifies to 5 / 54."
+  },
+  {
+    "id": 2,
+    "title": "Probability of Unfair Coin",
+    "topic": "Probability",
+    "tags": ["Conditional Probability"],
+    "difficulty": "Easy",
+    "question": "You have two coins. One is fair (H/T) and one is biased with two heads. You pick one at random and flip it, getting a Head. What is the probability you picked the fair coin?",
+    "answer": "Let F be the event of picking the fair coin, and B be the event of picking the biased coin. P(F) = P(B) = 0.5. Let H be the event of getting a Head. P(H|F) = 0.5. P(H|B) = 1. Using Bayes' theorem, P(F|H) = [P(H|F) * P(F)] / P(H). P(H) = P(H|F)P(F) + P(H|B)P(B) = (0.5 * 0.5) + (1 * 0.5) = 0.75. So, P(F|H) = (0.5 * 0.5) / 0.75 = 0.25 / 0.75 = 1/3."
+  },
+  {
+    "id": 3,
+    "title": "Greedy Pirates",
+    "topic": "Brainteasers",
+    "tags": ["Game Theory"],
+    "difficulty": "Medium",
+    "question": "Five pirates have 100 gold coins. They have to decide how to distribute them. The pirates have a strict order of seniority. The most senior pirate proposes a distribution. All pirates, including the proposer, vote on it. If 50% or more of the pirates vote for it, it passes. If it fails, the proposing pirate is thrown overboard and the process starts again with the next most senior pirate. How will the coins be distributed?",
+    "answer": "The most senior pirate (P5) proposes the following distribution: P5 gets 98 coins, P4 gets 0, P3 gets 1 coin, P2 gets 0, and P1 gets 1 coin. This works because P5 only needs his own vote and two others. He secures the votes of P3 and P1 by giving them one coin each, which is better than the zero coins they would get if P5 were thrown overboard and P4 made the proposal. P4 would have proposed 99 for himself and 1 for P2."
+  },
+  {
+    "id": 4,
+    "title": "First Ace",
+    "topic": "Probability",
+    "tags": ["Expected Value"],
+    "difficulty": "Medium",
+    "question": "From a standard shuffled deck of 52 cards, what is the probability that the fifth card you draw is the first Ace?",
+    "answer": "For the fifth card to be the first Ace, the first four cards must not be Aces, and the fifth card must be an Ace. The probability of the first card not being an Ace is 48/52. The probability of the second not being an Ace (given the first wasn't) is 47/51. For the third, it's 46/50. For the fourth, it's 45/49. The probability of the fifth card being an Ace is 4/48. Multiplying these together: (48/52) * (47/51) * (46/50) * (45/49) * (4/48) ≈ 6.59%."
+  },
+  {
+    "id": 5,
+    "title": "Maximum Drawdown",
+    "topic": "Statistics",
+    "tags": ["Algorithms"],
+    "difficulty": "Hard",
+    "question": "Given a time series of asset prices, write a function to calculate the maximum drawdown.",
+    "answer": "The maximum drawdown is the maximum observed loss from a peak to a trough of a portfolio. To calculate it, iterate through the price series. Keep track of the current peak price seen so far. For each new price, calculate the drawdown from the current peak. Keep track of the maximum drawdown found so far. If a new price is higher than the current peak, update the peak. The final result is the largest peak-to-trough decline."
+  }
+]

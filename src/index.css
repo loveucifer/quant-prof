@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-white;
+  background-color: #000000;
+  /* A more sophisticated, abstract background */
+  background-image: radial-gradient(at 20% 80%, hsla(148, 100%, 15%, 0.3) 0px, transparent 50%),
+                    radial-gradient(at 80% 10%, hsla(148, 100%, 15%, 0.3) 0px, transparent 50%),
+                    radial-gradient(at 60% 70%, hsla(148, 100%, 10%, 0.2) 0px, transparent 50%);
+}

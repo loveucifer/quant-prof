@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction to Algorithmic Trading",
+    "summary": "A beginner's guide to the world of algorithmic trading, from basic concepts to building your first strategy.",
+    "date": "2025-07-20",
+    "content": "Algorithmic trading uses computer programs to follow a defined set of instructions for placing a trade in order to generate profits at a speed and frequency that is impossible for a human trader. This full post would dive into backtesting, strategy development, and risk management."
+  },
+  {
+    "id": 2,
+    "title": "Understanding the Black-Scholes Model",
+    "summary": "A deep dive into one of the most famous models in financial mathematics used for pricing options.",
+    "date": "2025-07-18",
+    "content": "The Black-Scholes model provides a theoretical estimate of the price of European-style options. This full post would explain the underlying assumptions, the formula itself, and its practical implications and limitations in the real world."
+  },
+  {
+    "id": 3,
+    "title": "A Guide to Portfolio Optimization",
+    "summary": "Learn the principles of Modern Portfolio Theory to build efficient investment portfolios.",
+    "date": "2025-07-15",
+    "content": "Portfolio optimization is the process of selecting the best portfolio (asset distribution), out of the set of all portfolios being considered, according to some objective. The objective typically maximizes factors such as expected return, and minimizes costs like financial risk. This post would cover the efficient frontier and Sharpe ratio."
+  },
+  {
+    "id": 4,
+    "title": "The Role of Beta in Quant Finance",
+    "summary": "Exploring how Beta is used to measure volatility and market risk for stocks and portfolios.",
+    "date": "2025-07-12",
+    "content": "Beta is a measure of a stock's volatility in relation to the overall market. A stock that swings more than the market over time has a beta above 1.0. If a stock moves less than the market, the stock's beta is less than 1.0. This full post would explain how to calculate and interpret beta."
+  }
+]
