@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import HeroBackground from '../components/common/HeroBackground';
-import QuantMatrix from '../components/common/QuantMatrix'; // Import the new matrix
+import QuantMatrix from '../components/common/QuantMatrix'; // The correct background component
 
 const Button = ({ children, onClick, variant = 'primary' }) => {
   const baseClasses = "font-semibold tracking-wider text-sm py-3 px-10 rounded-md transition-all duration-300";
@@ -27,13 +26,11 @@ const HomePage = () => {
 
   return (
     <div className="relative min-h-[90vh] flex items-center justify-center text-center container mx-auto px-4">
-      {/* Layer 1: The particle background */}
-      <HeroBackground />
-      {/* Layer 2: The new digital rain effect */}
+      {/* This component provides the entire background effect now */}
       <QuantMatrix />
 
-      {/* Layer 3: The main content, with a semi-transparent background to ensure readability */}
-      <main className="z-20">
+      {/* The main content, with a higher z-index to sit on top */}
+      <main className="z-10">
         <motion.h1 
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}

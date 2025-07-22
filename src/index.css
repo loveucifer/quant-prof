@@ -10,3 +10,14 @@ body {
                     radial-gradient(at 80% 10%, hsla(148, 100%, 15%, 0.3) 0px, transparent 50%),
                     radial-gradient(at 60% 70%, hsla(148, 100%, 10%, 0.2) 0px, transparent 50%);
 }
+
+/* FIX: Hide number input arrows in all browsers */
+@layer base {
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number'] {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield !important;
+  }
+}
